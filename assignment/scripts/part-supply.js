@@ -10,7 +10,7 @@ console.log(partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = [3,5,-6,0,7,11];
+let supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log(supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -21,8 +21,8 @@ console.log(supplyChanges[1]);
 //    array & console.log the value removed.
 console.log('4. Removed item:');
 
- let removedSupplyChanges = [];
- removedSupplyChanges =supplyChanges.pop();
+let removedSupplyChanges = [];
+removedSupplyChanges = supplyChanges.pop();
 console.log(removedSupplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
@@ -36,6 +36,18 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+
+for (x = 0; x < supplyChanges.length; x++) {
+	if (supplyChanges[x] > 0) {
+		console.log("Added", supplyChanges[x], "parts.")
+	}
+	else if (supplyChanges[x] == 0) {
+		console.log("No Change.")
+	}
+	else {
+		console.log("Removed", supplyChanges, "parts.")
+	}
+}
 
 
 // STRETCH GOALS
